@@ -1,4 +1,4 @@
-﻿namespace SampleAPI.Tests.Configuration
+﻿namespace SampleAPI.Shared.Helpers
 {
     public static class EnvironmentSetup
     {
@@ -8,7 +8,7 @@
             var reader = new JsonTextReader(file);
             var jObject = JObject.Load(reader);
             var variables = (jObject
-                .GetValue("profiles") ?? throw new InvalidOperationException())
+                    .GetValue("profiles") ?? throw new InvalidOperationException())
                 .SelectMany(profiles => profiles.Children())
                 .SelectMany(profile => profile.Children<JProperty>())
                 .Where(prop => prop.Name == "environmentVariables")

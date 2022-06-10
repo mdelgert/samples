@@ -3,13 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAPI.Shared", "SampleAPI.Shared\SampleAPI.Shared.csproj", "{B9A60AC4-A74C-4576-BB9A-4BBED6D7D16B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleAPI.Shared", "SampleAPI.Shared\SampleAPI.Shared.csproj", "{B9A60AC4-A74C-4576-BB9A-4BBED6D7D16B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAPI.Tests", "SampleAPI.Tests\SampleAPI.Tests.csproj", "{F784C1BD-C4B3-47ED-9887-114EEB2C6600}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleAPI.Tests", "SampleAPI.Tests\SampleAPI.Tests.csproj", "{F784C1BD-C4B3-47ED-9887-114EEB2C6600}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAPI.Functions", "SampleAPI.Functions\SampleAPI.Functions.csproj", "{EAD25A9C-5FD1-415E-B888-CFDD86B54627}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleAPI.Functions", "SampleAPI.Functions\SampleAPI.Functions.csproj", "{EAD25A9C-5FD1-415E-B888-CFDD86B54627}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAPI.CMD", "SampleAPI.CMD\SampleAPI.CMD.csproj", "{72E6C04E-472E-4BC6-AE54-20081F565048}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleAPI.CMD", "SampleAPI.CMD\SampleAPI.CMD.csproj", "{72E6C04E-472E-4BC6-AE54-20081F565048}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SampleAPI.Database", "SampleAPI.Database\SampleAPI.Database.sqlproj", "{90DEAC63-6C71-41D6-B93F-79961AF1494F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{5105333A-FA77-450D-9C23-C596F20AB2C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SchemaCompare", "SchemaCompare", "{B2AB72FE-F18C-4A31-8605-26B964BD1EA7}"
+	ProjectSection(SolutionItems) = preProject
+		Files\SchemaCompare\SampleCompare.scmp = Files\SchemaCompare\SampleCompare.scmp
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +42,18 @@ Global
 		{72E6C04E-472E-4BC6-AE54-20081F565048}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72E6C04E-472E-4BC6-AE54-20081F565048}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72E6C04E-472E-4BC6-AE54-20081F565048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90DEAC63-6C71-41D6-B93F-79961AF1494F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DEAC63-6C71-41D6-B93F-79961AF1494F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DEAC63-6C71-41D6-B93F-79961AF1494F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{90DEAC63-6C71-41D6-B93F-79961AF1494F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DEAC63-6C71-41D6-B93F-79961AF1494F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90DEAC63-6C71-41D6-B93F-79961AF1494F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2AB72FE-F18C-4A31-8605-26B964BD1EA7} = {5105333A-FA77-450D-9C23-C596F20AB2C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {669A424B-87D2-43E4-8829-F41623C76E2B}

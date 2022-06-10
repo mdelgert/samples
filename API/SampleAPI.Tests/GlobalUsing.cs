@@ -1,10 +1,4 @@
-﻿global using SampleAPI.Tests.Configuration;
+﻿global using SampleAPI.Shared.Helpers;
 global using Xunit;
-global using System;
-global using System.IO;
-global using System.Linq;
-global using Newtonsoft.Json;
-global using Newtonsoft.Json.Linq;
 global using Microsoft.Extensions.DependencyInjection;
-global using Microsoft.Extensions.Logging;
 global using Microsoft.Extensions.Hosting;

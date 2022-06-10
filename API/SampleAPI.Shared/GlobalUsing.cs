@@ -1,12 +1,2 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SampleAPI.Shared
-{
-    internal class GlobalUsing
-    {
-    }
-}
+﻿global using Newtonsoft.Json;
+global using Newtonsoft.Json.Linq;

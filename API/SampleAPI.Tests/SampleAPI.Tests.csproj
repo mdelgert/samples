@@ -23,6 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SampleAPI.Shared\SampleAPI.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Properties\launchSettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
