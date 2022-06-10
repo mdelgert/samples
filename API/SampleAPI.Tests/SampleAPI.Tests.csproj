@@ -32,4 +32,9 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Workflow\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>

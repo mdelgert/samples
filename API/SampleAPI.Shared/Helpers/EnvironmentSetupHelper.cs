@@ -1,6 +1,6 @@
 ﻿namespace SampleAPI.Shared.Helpers
 {
-    public static class EnvironmentSetup
+    public static class EnvironmentSetupHelper
     {
         public static void GetVariables()
         {

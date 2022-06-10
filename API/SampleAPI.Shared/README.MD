@@ -9,6 +9,9 @@ Install-Package Dapper
 https://www.nuget.org/packages/System.Data.SqlClient/
 Install-Package System.Data.SqlClient
 
+https://www.nuget.org/packages/RandomDataGenerator.Net/
+Install-Package RandomDataGenerator.Net
+
 # Links
 https://my-json-server.typicode.com/
 https://dotnetcoretutorials.com/2021/08/19/global-using-statements-in-c10/

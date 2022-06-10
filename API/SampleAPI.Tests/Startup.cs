@@ -4,7 +4,7 @@
     {
         public static void ConfigureServices(IServiceCollection services, HostBuilderContext hostBuilderContext)
         {
-            EnvironmentSetup.GetVariables();
+            EnvironmentSetupHelper.GetVariables();
             //var configurationShared = ConfigurationHelper.Get();
             //services.AddSingleton(_ => configurationShared);
             //services.AddSingleton<ITest, Test>();
