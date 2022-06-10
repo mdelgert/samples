@@ -13,3 +13,5 @@ Install-Package System.Data.SqlClient
 https://my-json-server.typicode.com/
 https://dotnetcoretutorials.com/2021/08/19/global-using-statements-in-c10/
 https://my-json-server.typicode.com/typicode/demo
+
+my-json-server.typicode.com/mdelgert/samples/posts/1
