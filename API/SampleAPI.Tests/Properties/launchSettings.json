@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SampleAPI.Tests": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ConnectionString": "Server=localhost;Database=samples;Trusted_Connection=True;"
+      }
+    }
+  }
+}
