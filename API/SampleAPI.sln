@@ -20,6 +20,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SchemaCompare", "SchemaComp
 		Files\SchemaCompare\SampleCompare.scmp = Files\SchemaCompare\SampleCompare.scmp
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleJsonData", "SampleJsonData", "{85ADD97F-5E48-49B7-A19D-D5F2506C851D}"
+	ProjectSection(SolutionItems) = preProject
+		Files\SampleJsonData\Customers.json = Files\SampleJsonData\Customers.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +59,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B2AB72FE-F18C-4A31-8605-26B964BD1EA7} = {5105333A-FA77-450D-9C23-C596F20AB2C0}
+		{85ADD97F-5E48-49B7-A19D-D5F2506C851D} = {5105333A-FA77-450D-9C23-C596F20AB2C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {669A424B-87D2-43E4-8829-F41623C76E2B}

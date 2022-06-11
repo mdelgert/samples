@@ -1,5 +1,9 @@
-﻿global using Newtonsoft.Json;
+﻿global using SampleAPI.Shared.Model;
+global using Newtonsoft.Json;
 global using Newtonsoft.Json.Linq;
 global using System.Dynamic;
 global using RandomDataGenerator.FieldOptions;
 global using RandomDataGenerator.Randomizers;
+global using System.Data.SqlClient;
+global using Dapper;
+global using System.Data;
