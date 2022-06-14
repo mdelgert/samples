@@ -19,7 +19,9 @@ namespace SampleAPI.Functions
         {
             log.LogInformation("NotesFunction processed a request.");
 
-            var notes = await _noteService.ReadAll();
+            //var notes = await _noteService.ReadAll();
+            var notes = await _noteService.ReadPaged(1, 5);
+            
             var responseMessage = JsonConvert.SerializeObject(notes, Formatting.Indented);
             
             return await Task.FromResult(new HttpResponseMessage(HttpStatusCode.OK)

@@ -1,10 +1,10 @@
 ﻿namespace SampleAPI.Shared.Services;
-
 public interface INoteService
 {
     Task<NotesModel> CreateUpdate(NotesModel note);
     Task<NotesModel?> ReadSingle(int noteId);
     Task<List<NotesModel>> ReadAll();
+    Task<List<NotesModel>> ReadPaged(int pageNumber, int pageSize);
     Task Delete(NotesModel note);
 }
 
@@ -49,6 +49,15 @@ public class NoteService : INoteService
     {
         var notes = _db.Notes.ToList();
         return Task.FromResult(notes);
+    }
+    
+    public async Task<List<NotesModel>> ReadPaged(int pageNumber, int pageSize)
+    {
+        var pagedData = await _db.Notes
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
+        return pagedData;
     }
     
     public async Task Delete(NotesModel note)
