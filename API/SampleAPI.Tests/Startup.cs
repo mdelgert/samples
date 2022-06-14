@@ -1,4 +1,6 @@
-﻿namespace SampleAPI.Tests
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace SampleAPI.Tests
 {
     public class Startup
     {
@@ -6,6 +8,8 @@
         {
             EnvironmentSetupHelper.GetVariables();
             var configurationShared = ConfigurationHelper.Get();
+            var db = new DbHelper();
+            services.AddSingleton(_ => db);
             services.AddSingleton(_ => configurationShared);
             services.AddSingleton<INoteService, NoteService>();
         }
