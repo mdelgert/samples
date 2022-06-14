@@ -26,8 +26,11 @@ https://docs.microsoft.com/en-us/ef/core/modeling/keyless-entity-types?tabs=data
 https://www.entityframeworktutorial.net/querying-entity-graph-in-entity-framework.aspx
 https://www.entityframeworktutorial.net/Querying-with-EDM.aspx
 
-Paging in Entity Framework Core
+# Paging in Entity Framework Core
 https://www.codingame.com/playgrounds/5363/paging-with-entity-framework-core
+https://codewithmukesh.com/blog/pagination-in-aspnet-core-webapi/
+https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/sort-filter-page?view=aspnetcore-6.0
+https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/sorting-filtering-and-paging-with-the-entity-framework-in-an-asp-net-mvc-application
 
 # Using FluentMigrator
 https://www.section.io/engineering-education/building-a-crud-api-dapper-aspnet-core/
