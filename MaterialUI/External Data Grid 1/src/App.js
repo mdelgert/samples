@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import MaterialTable from 'material-table'
 
@@ -11,7 +11,7 @@ const empList = [
 
 function App() {
 
-  const [data, setData] = useState(empList)
+  const [data] = useState(empList)
   const columns = [
     { title: "ID", field: "id" },
     { title: "Name", field: "name" },
